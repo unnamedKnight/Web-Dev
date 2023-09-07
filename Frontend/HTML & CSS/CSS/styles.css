@@ -1,0 +1,25 @@
+/* 
+Many properties in CSS such as color, fonts and many others are actually inherited down to other children.
+*/
+
+header{
+    background-color: purple;
+}
+
+.header-text{
+    color: white;
+    text-align: center;
+
+}
+
+.article-title{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article-date{
+    font-style: italic;
+}
+
+.article-date, .article-author{
+    color: grey;
+}
