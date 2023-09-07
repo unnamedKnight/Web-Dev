@@ -1,0 +1,32 @@
+/* class selectors */
+
+
+/* the following selector will select every div with the class name 'class-name` */
+
+div.class-name{
+
+}
+
+/* h1 with a class name `class2` with id=`id3` will be selected */
+
+h1.class2#id3{
+
+}
+
+
+/* h1 with a class name `class2` with id=`id3` will be selected, or if the element is a span it will also be selected */
+/* comma performs `or` operation in css selector */
+
+
+h1.class2#id3, span{
+
+}
+
+/* the space between css selectors say that everything that comes after has to be a child of what came before */
+/*- so in the following expression div is parent element */
+/* and we are selecting every single `p` element (also selecting indirect children's) inside div */
+/* */
+
+div p{
+
+}
