@@ -20,3 +20,23 @@ curly braces will trigger
 /* ------------------------- structural pseudo class ------------------------ */
 
 /*- structural pseudo classes allows us to select things based on where they are on the page */
+
+
+/* 
+- padding allows us to space out the content itself form the background and border
+- so we can expand our background as needed
+
+- margin is for spacing out different elements
+- Let's say we have two divs and both of them have margins, but margins don't add up
+- whichever divs margin has the highest value that margin will take effect
+
+
+- {
+    box-sizing: border-box
+}
+
+- This css above will not scale the html element with padding and border externally
+- But it will scale the element within the height and width that is provided in the css
+
+
+*/
