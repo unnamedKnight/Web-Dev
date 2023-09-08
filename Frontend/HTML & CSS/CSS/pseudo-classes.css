@@ -1,0 +1,22 @@
+/* when we hover over the css element that has a class submit the things defined within the
+curly braces will trigger
+*/
+.submit:hover{
+
+}
+/* when we click on to something or we tab through the webpage we enter in the focus state */
+.submit:focus{
+
+}
+/* now things inside the curly braces will trigger when the element with email class is disabled */
+.email:disabled{
+
+}
+/* now things inside the curly braces will trigger when the element with email class is required */
+.email:required{
+
+}
+
+/* ------------------------- structural pseudo class ------------------------ */
+
+/*- structural pseudo classes allows us to select things based on where they are on the page */

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            /* we are saying, select the first child of a container that is a span
+            - if the first child inside the container is not a span the following selector will not work
+*/
+            span:first-child {
+                color: red;
+            }
+            /* if we want to get a specific element type inside a container we can use the
+   following selector */
+            /* this will give us the first span element inside any container */
+            /* span:first-of-type{
+    color:blue;
+   } */
+            /* we can select specific child by using the following selector */
+            /* if the child that we are selecting in a container is a span element than the
+   following css will work, and if not a span than it will not work */
+            /* span:nth-child(2){
+    color: green;
+   } */
+            span:nth-child(even) {
+                color: green;
+            }
+            /* we can write our own custom formula in nth-child */
+            /* here the initial value of n=0 as for the value for the first_child=0
+
+   - so for the first child the value will be 2*0+1 = 1
+   - and then 2*1+1 = 3, and so on..... */
+            span:nth-child(2n + 1) {
+                color: aqua;
+            }
+            /* so there is also another selector and it works like first-of-type but we can
+   select specific element or provide formulas here */
+            span:nth-of-type(2) {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="">
+            <div>0</div>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+        </div>
+        <div class="">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
