@@ -1,0 +1,34 @@
+.header-text{
+    text-align: center;
+}
+
+.section-header{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#section1, #section3{
+    background-color: green;
+    color: white;
+}
+
+.first-item{
+    color:cyan;
+}
+
+.unfavorite{
+   text-decoration: line-through; 
+
+}
+
+
+/* 
+
+- A class selector is more specific than an element selector
+- and in CSS something more specific is always going to override something that is less specific
+- like a class selector will always override an element selector
+- CSS ids are more specific than classes
+- inline CSS is more specific than CSS ids
+- `!important` keyword always overrides other things in CSS 
+
+
+*/
