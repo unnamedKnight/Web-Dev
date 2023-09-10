@@ -7,11 +7,8 @@ body{
     margin: 0;
 }
 
-/* select every h1 inside #section1 id
-this selector will select every direct and indirect child from the element
-that has an id of #section1
 
-*/
+
 #product-overview{
     background: url("freedom.jpg");
     width: 100%;
@@ -21,12 +18,46 @@ that has an id of #section1
 
 .section-title{
     color:#2ddf5c;
+    text-align: center;
 
 }
 
 #product-overview h1{
     color:white;
     font-family: 'Anton', sans-serif;
+}
+
+.plan{
+    background: #d5ffdc;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    box-shadow: 2px 2px 5px 0 hsl(130, 100%,  92%);
+}
+
+.plan--highlighted{
+    background: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 5px 0 #0e4f1f;
+}
+
+.plan__annotation{
+    background: white;
+    color: #19b84c;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.plan__features{
+    list-style: none;
+}
+
+.plan__features li{
+    margin: 5px 0;
 }
 
 .main-header{
