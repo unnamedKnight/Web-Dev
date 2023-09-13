@@ -57,6 +57,11 @@ main{
     position: absolute;
     top: 0;
     right: 0;
+    margin: 16px;
+    font-size: 12px;
+    color: white;
+    background: orangered;
+    padding: 8px;
 }
 
 .plan-annotation{
