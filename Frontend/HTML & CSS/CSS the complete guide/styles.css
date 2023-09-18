@@ -128,6 +128,7 @@
     margin: 32 px;
 }
 
+
 .key-features__list {
     margin: 0;
     padding: 0;
@@ -137,11 +138,20 @@
 
 .key-feature {
     color: white;
-    display: inline-block;
-    /* margin: 0 8px; */
-    width: 30%;
-    vertical-align: top;
+    display: block;
+    /* margin: auto; */
+    margin-top: 32px;
 
+}
+
+@media(min-width: 640px) {
+    .key-feature {
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+        min-width: 207px;
+        max-width: 285px;
+    }
 }
 
 .key-feature__image {

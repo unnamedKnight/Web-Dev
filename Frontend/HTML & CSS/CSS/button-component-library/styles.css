@@ -71,7 +71,6 @@
 }
 
 .btn-custom:hover, .btn-custom:focus{
-    background: linear-gradient(to right, hsl(271, 70%, 40%), hsl(200, 100%, 30%));
+    background: linear-gradient(to left, hsl(271, 70%, 40%), hsl(200, 100%, 30%));
     box-shadow: 0 0 5px 0 #222;
 }
-
