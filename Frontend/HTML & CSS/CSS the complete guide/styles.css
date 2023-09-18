@@ -71,6 +71,8 @@
         width: 30%;
         vertical-align: middle;
         margin: 8px;
+        min-width: 207px;
+        max-width: 285px;
         box-shadow: 2px 2px 5px 0 hsl(130, 100%, 92%);
     }
 }
