@@ -33,10 +33,6 @@ main {
     vertical-align: bottom;
 }
 
-/* ------------------------------ not selector ------------------------------ */
-
-/* all the inputs that are don't have a type 'checkbox' will be 
-selected by the first query */
 
 .signup-form input:not([type='checkbox']),
 .signup-form select {
@@ -87,4 +83,11 @@ selected by the first query */
     .signup-form button[type='submit'] {
         width: auto;
     }
+}
+
+
+.signup-form :invalid {
+    border: 1px solid red !important;
+
+    background-color: #faacac;
 }
