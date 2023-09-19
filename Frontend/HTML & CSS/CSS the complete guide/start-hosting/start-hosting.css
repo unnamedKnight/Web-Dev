@@ -1,0 +1,90 @@
+main {
+    padding-top: 4rem;
+
+}
+
+.signup-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ff5454;
+}
+
+.signup-form {
+    padding: 1rem;
+}
+
+.signup-form label {
+    font-weight: bold;
+}
+
+.signup-form label,
+.signup-form input,
+.signup-form select {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
+.signup-form input[id *='terms'],
+.signup-form input[id *='terms']+label {
+    display: inline-block;
+    width: auto;
+    vertical-align: bottom;
+}
+
+/* ------------------------------ not selector ------------------------------ */
+
+/* all the inputs that are don't have a type 'checkbox' will be 
+selected by the first query */
+
+.signup-form input:not([type='checkbox']),
+.signup-form select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: .5rem .5rem;
+    font: inherit;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+    border: 2px solid #2ddf5c;
+    background: #d8f3df;
+    outline: none;
+}
+
+.signup-form input[type='checkbox'] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: white;
+    width: 1rem;
+    height: 1rem;
+    outline: none;
+    appearance: none;
+}
+
+.signup-form input[type='checkbox']:checked {
+    background: #2ddf5c;
+    border: 1px solid #0e4f1f;
+}
+
+.signup-form button[type='submit'] {
+    display: block;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .signup-form {
+        width: 25rem;
+        margin: auto;
+    }
+
+    .signup-form label {
+        font-weight: normal;
+    }
+
+    .signup-form button[type='submit'] {
+        width: auto;
+    }
+}
