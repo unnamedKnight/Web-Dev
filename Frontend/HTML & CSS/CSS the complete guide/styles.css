@@ -110,8 +110,8 @@
     .plan {
         width: 30%;
         margin: 8px 8px;
-        min-width: 285px;
-        max-width: 400px;
+        min-width: 13rem;
+        max-width: 25rem;
     }
 }
 
@@ -200,10 +200,11 @@
     .key-feature {
         width: 30%;
         padding: 24px;
-
-        /* min-width: 207px;
-        max-width: 285px; */
+        min-width: 13rem;
+        max-width: 25rem;
     }
+}
+
 .key-feature__image {
     background: #ffcede;
     height: 128px;
