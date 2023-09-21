@@ -1,5 +1,12 @@
 .container {
     margin: 20px;
+    display: grid;
+    /* By default display:grid give us one column */
+    /* The following CSS rules specifies the number of column we want */
+    /* In the following scenario 1st column will 200px wide, second column 150px and third column is 20% wide */
+    grid-template-columns: 200px 150px 20% 1fr;
+    /* We create rows by providing each rows height */
+    grid-template-rows: 5rem 2.5rem;
 }
 
 .el1 {
@@ -16,4 +23,16 @@
 
 .el4 {
     background: rgba(0, 4, 255, 0.5);
+}
+
+.el5 {
+    background: rgba(255, 154, 72, 0.5);
+}
+
+.el6 {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+.el7 {
+    background: rgba(0, 128, 0, 0.5);
 }
