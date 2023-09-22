@@ -5,8 +5,11 @@
     /* The following CSS rules specifies the number of column we want */
     /* In the following scenario 1st column will 200px wide, second column 150px and third column is 20% wide */
     grid-template-columns: 200px 150px 20% 1fr;
+    /* column-gap: 20px;
+    row-gap: 10px; */
+    /* gap: 10px 30px; */
     /* We create rows by providing each rows height */
-    grid-template-rows: 5rem 2.5rem;
+    grid-template-rows: 5rem 50px 10rem;
 }
 
 .el1 {
@@ -15,17 +18,29 @@
 
 .el2 {
     background: rgba(255, 0, 0, 0.5);
+    /* when we define the following code this grid-element will take the space of the entire row */
+    /* grid-column-start: 1;
+    grid-column-end: -1; */
+    /* grid-column: 2 / 3; */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* z-index: 1; */
 }
 
 .el3 {
     background: rgba(0, 128, 0, 0.5);
+    /* grid-column: 3 / -1; */
+    /* grid-column: 1 / -1; */
+    /* grid-row: 4 / 5; */
+    /* grid-row: 1 / -1; */
+    /* grid-row: 1 / span 2; */
 }
 
 .el4 {
     background: rgba(0, 4, 255, 0.5);
 }
 
-.el5 {
+/* .el5 {
     background: rgba(255, 154, 72, 0.5);
 }
 
@@ -35,4 +50,4 @@
 
 .el7 {
     background: rgba(0, 128, 0, 0.5);
-}
+} */
