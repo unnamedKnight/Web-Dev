@@ -18,6 +18,7 @@ main{
     border-left: none;
     /* padding: 16px 24px; */
     margin: 24px 0;
+    overflow: hidden;
 }
 
 .plus-plan{
@@ -62,12 +63,15 @@ h2.package__badge{
     position: absolute;
     top: 0;
     right: 0;
+    width: 12rem;
+    text-align: center;
     /* margin: 16px; */
     font-size: 12px;
     color: white;
     background: orangered;
     padding: 8px;
-    transform: rotateZ(45deg);
+    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+    /* transform-origin: top left; */
 }
 
 .plan-annotation{
