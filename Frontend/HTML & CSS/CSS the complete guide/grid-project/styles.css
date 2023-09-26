@@ -4,25 +4,18 @@
     /* By default display:grid give us one column */
     /* The following CSS rules specifies the number of column we want */
     /* In the following scenario 1st column will 200px wide, second column 150px and third column is 20% wide */
-    grid-template-columns: 200px 150px 20% 1fr;
-    /* column-gap: 20px;
-    row-gap: 10px; */
-    /* gap: 10px 30px; */
+    /* grid-template-columns: 200px 150px 20% 1fr; */
+    /* here every column have same name but we can use column numbers 
+    to define the specific position of column */
+    grid-template-columns: repeat(4, [col-start] 25% [col-end]);
+
     /* We create rows by providing each rows height */
-    grid-template-rows: 5rem 50px 10rem;
+    /* we can specify two name  within [] by adding a space
+    between two names */
+    /* Here first row has two names row-1-start and row-1-end */
+    /* Here second row has two names row-2-start and row-2-end */
+    grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start] 50px [row-2-end row-3-start] 10rem [row-3-end];
 
-    /* We need to use names for as many rows and columns as we have */
-    /* Here, the first row has a header area
-        the second row has two areas side and main
-        and third row has one area footer
-    if we want to leave some cells empty we can dot(.). For example:
-            '. . main main'   
-
-    if we don't specify the positioning of some grid-elements
-    by default those will take the empty space
-
-    with grid-area the DOM order is not respected
-    */
     grid-template-areas: 'header header header header'
         '. . main main'
         'footer footer footer footer'
@@ -31,6 +24,14 @@
 
 .el1 {
     background: rgba(255, 154, 72, 0.5);
+    /* we can position grid elements with column by doing the following
+    since we use repeat function to create columns with names,
+    we can use the following approach,
+        here col-start 2 means start at column 2 and
+        col-end 2 means end at the end of column2
+
+    */
+    grid-column: col-start 2 / col-end 2;
 }
 
 .el2 {

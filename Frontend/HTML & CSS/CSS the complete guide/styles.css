@@ -14,9 +14,9 @@
     /* background-image: radial-gradient( red, blue, transparent); */
 
     width: 100vw;
-    /* height: 60vh; */
-    height: 633px;
-    margin-top: 43px;
+    height: 60vh;
+    /* height: 633px; */
+    /* margin-top: 43px; */
     /* padding: 10px; */
     position: relative;
 }
@@ -38,7 +38,7 @@
         height: 633px;
         background-size: cover;
         /* background-position: 50% 25%; */
-        background-position: left 25% bottom 65%;
+        background-position: left 25% top 25%;
     }
 
     #product-overview h1 {
