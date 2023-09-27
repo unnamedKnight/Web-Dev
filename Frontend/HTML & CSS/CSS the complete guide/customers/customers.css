@@ -31,13 +31,15 @@
     /* max-width: 580px;
     min-width: 350px; */
     /* box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3); */
+    transform: skew(10deg);
+    overflow: hidden;
 
 }
 
 .testimonial__image {
     width: 100%;
     /* vertical-align: top; */
-    display: block;
+    transform: skew(-10deg) scaleX(2);
 }
 
 
