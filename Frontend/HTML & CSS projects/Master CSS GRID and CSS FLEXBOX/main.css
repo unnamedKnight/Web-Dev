@@ -1,0 +1,36 @@
+/* 
+In order to use transition property we must use transition-property 
+and transition-duration
+
+transition-delay will start transition after the seconds that is defined
+
+transition-timing-function will enforce the behavior of transition
+*/
+
+div {
+    height: 300px;
+    width: 300px;
+    background-color: orangered;
+    /* transition-property: width;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease; */
+    /* if we want to use transition shorthand
+   than we have to follow the above order */
+   
+
+   /* transition with multiple properties */
+   transition: width 1s, background-color 1s;
+   /* if we are using transition on multiple properties with same
+   duration we can also do the following
+   */
+   transition: all 1s;
+
+   /
+
+  }
+  
+  div:hover {
+    width: 600px;
+    background-color: blue;
+  }
